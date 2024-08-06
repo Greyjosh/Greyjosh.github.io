@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Concert+One&display=swap');
+/* General body styles */
+body {
+    font-family: "Calistoga", serif;
+    background-color: #fbd3ad; /* Medium grey background */
+    color: #000; /* Black text */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+
+/* Navbar styles */
+nav {
+    background-color: #312e2e; /* Dark grey background for navbar */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text for navbar links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Use full width of the container */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center items horizontally */
+    text-align: left;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    padding: 20px;
+    background-color: #fbd3ad; /* Background for the photo and contact info */
+    border-right: 5px solid #333; /* Separator line */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 300px; /* Size of the photo */
+    height: 300px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border: 7px solid #333; /* Dark grey border */
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: start;
+    text-align: left;
+    flex-direction: column;
+}
+
+.contact-info h3 {
+    margin-bottom: 5px;
+    color: #333; /* Dark grey color for headings */
+}
+
+.contact-info p {
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+    margin: 0px 0;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact-info i.icon {
+    margin-right: 10px;
+    color: #333; /* Dark grey color for icons */
+}
+
+.contact-info a {
+    color: #333; /* Dark grey color for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info .linkedin-icon {
+    margin-right: 15px; /* Add space between LinkedIn and Email */
+}
+
+/* Content container styles */
+.content-container {
+    flex: 1; /* Take up remaining space */
+    margin-left: 350px; /* Space to accommodate photo and contact info on the left */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    padding: 40px; /* Add padding for larger sections */
+    /* Remove transition property */
+    scroll-snap-align: start; /* Snap to section */
+}
+
+h1 {
+    font-size: 6em; /* Larger font size for headings */
+    color: #000; /* Black color for headings */
+    margin-bottom: 40px; /* Increased space below headings */
+}
+
+h2 {
+    font-size: 4em; /* Larger font size for headings */
+    color: #000; /* Black color for headings */
+    margin-bottom: 40px; /* Increased space below headings */
+}
+
+p {
+    font-size: 2em; /* Larger font size for text */
+    margin-top: 0; /* Remove default top margin for better alignment */
+    margin-bottom: 20px; /* Adjust spacing between paragraphs */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark grey background for footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
